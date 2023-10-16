@@ -2,6 +2,14 @@ import React from 'react'
 import Navbar from './component/Navbar.tsx/page'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const Home = () => {
   return (
@@ -16,7 +24,7 @@ const Home = () => {
           <p className='text-[#267D49] font-medium text-2xl w-11/12 leading-10 py-5'>
           Explore our curated collection of stylish clothing and accessories tailored to your unique taste.
           </p>
-          <Button variant="default" className='my-10 py-5 w-[258px] text-xl'>Explore Now</Button>
+          <Button variant="default">Explore Now</Button>
         </div>
         <div> 
           <Image 
@@ -28,6 +36,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+   <Card>shhs</Card>
+
     </>
   )
 }
